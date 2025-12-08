@@ -1,6 +1,6 @@
 import React from "react";
 // import HeroImage from "../assets/heroImage.jpg";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdOutlineMail } from "react-icons/md";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -11,18 +11,25 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            Hi, welcome to Criativo Devs.
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            Full Stack Developer with over 5 years of experience in scalable
-            solutions, API development, and mobile applications
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+            Engenheiro Full Stack
+            <span className="text-cyan-400">
+              {" "}
+              — Python, Django, React & SaaS
+            </span>
+          </h1>
+          <p className="text-gray-300 py-4 max-w-md">
+            Engenheiro Full Stack com mais de 5 anos entregando soluções
+            escaláveis, APIs de alta performance e aplicações móveis orientadas
+            a resultados. Ajudo equipes e produtos a irem do protótipo à
+            produção com qualidade e observabilidade.
           </p>
-          <div>
+          <div className="flex items-center gap-4">
             <Link
               to="portfolio"
               smooth
               duration={500}
+              aria-label="Ver portfolio"
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio
@@ -32,6 +39,20 @@ const Home = () => {
                   className="ml-1"
                 />
               </span>
+            </Link>
+
+            <Link
+              to="contact"
+              smooth
+              duration={500}
+              aria-label="Contrate-me / Entrar em contato"
+              className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md border-2 border-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            >
+              Contrate-me
+              <MdOutlineMail
+                size={20}
+                className="ml-2"
+              />
             </Link>
           </div>
         </div>

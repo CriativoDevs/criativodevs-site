@@ -11,5 +11,20 @@
 @layer base {
   html {
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root {
+    --cw-primary: #06b6d4; /* cyan-500 */
+    --cw-accent: #3b82f6; /* blue-500 */
+    --cw-bg: #0b1220;
+    --cw-surface: #0f1724;
+  }
+
+  body {
+    background-color: var(--cw-bg);
+    color: #e6eef8;
   }
 }
